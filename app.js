@@ -90,5 +90,51 @@ paraFour.textContent = "also 2 wheels";
 console.log(paraFour);
 
 const paraFive = document.querySelector('.paragraph-five');
-paraFive.textContent = "Sky bus";
+paraFive.textContent = "Sky bus";// Adding text
 console.log(paraFive);
+
+const containerSix = document.createElement('div');// How to add div
+containerSix.classList.add('container-six');// How to add class
+console.log(containerSix);
+
+const sectionSix = document.createElement('h2');
+
+
+sectionSix.setAttribute('id', 'section-six');// How to add id
+sectionSix.textContent = "Walking";
+
+console.log(sectionSix);
+
+const paraSix = document.createElement('p');
+paraSix.classList.add('paragraph-six');
+paraSix.textContent = " like standing still, but with momentum";
+
+console.log(paraSix);
+
+const body = document.querySelector('body');
+console.log(body);
+
+body.appendChild(containerSix);
+containerSix.appendChild(sectionSix);
+sectionSix.appendChild(paraSix);
+
+// start
+const containerSeven = document.createElement('div');
+containerSix.classList.add('container-seven');
+
+const sectionSeven = document.createElement('h2');
+
+sectionSeven.setAttribute('id', 'section-seven');
+
+sectionSeven.textContent = "Running";
+
+const paraSeven = document.createElement('p');
+
+paraSeven.classList.add('paragraph-seven');
+paraSeven.textContent = "Like walking while falling forward";
+
+body.appendChild(containerSeven);
+containerSeven.appendChild(sectionSeven);
+sectionSeven.appendChild(paraSeven);
+//end
+
