@@ -116,25 +116,34 @@ console.log(body);
 
 body.appendChild(containerSix);
 containerSix.appendChild(sectionSix);
-sectionSix.appendChild(paraSix);
+containerSix.appendChild(paraSix);
 
 // start
 const containerSeven = document.createElement('div');
-containerSix.classList.add('container-seven');
-
+//create div
+containerSeven.classList.add('container-seven');
+//add class to div
 const sectionSeven = document.createElement('h2');
-
+//create h2
 sectionSeven.setAttribute('id', 'section-seven');
-
+//add id to h2
 sectionSeven.textContent = "Running";
-
+//add textContent to h2
 const paraSeven = document.createElement('p');
-
+//create <p> paragraph
 paraSeven.classList.add('paragraph-seven');
+//add class to <p>
 paraSeven.textContent = "Like walking while falling forward";
-
+//add text to<p>
 body.appendChild(containerSeven);
+//add div to body
 containerSeven.appendChild(sectionSeven);
-sectionSeven.appendChild(paraSeven);
+//add h2 to div
+containerSeven.appendChild(paraSeven);
+//add <p> to div
+
+
 //end
+
+
 
